@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUNAVVAR HUSSAIN | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-user"></i> MUNAVVAR HUSSAIN</h1>
+      <p>Web Developer | Designer | Data analyst </p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <main class="container">
+    <section id="about">
+  <h2><i class="fas fa-address-card"></i> About Me</h2>
+
+    <p>
+      Hello! I'm <strong>Munavvar Hussain</strong>, a passionate <strong>Web Developer</strong>, <strong>Web Designer</strong>, and <strong>Data Analyst</strong>. I specialize in building responsive, user-friendly websites and transforming data into actionable insights. With a strong eye for design and a love for clean code, I aim to create digital experiences that are both functional and visually compelling.
+    </p>
+  </div>
+</section>
+  </div>
+</section>
+<section id="skills">
+  <h2><i class="fas fa-tools"></i> My Skills</h2>
+  <div class="skills-container">
+    
+    <div class="skill-item">
+      <i class="fab fa-html5"></i>
+      <span>HTML</span>
+      <div class="skill-bar"><div class="progress" style="width: 95%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fab fa-css3-alt"></i>
+      <span>CSS</span>
+      <div class="skill-bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fab fa-js-square"></i>
+      <span>JavaScript</span>
+      <div class="skill-bar"><div class="progress" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fas fa-database"></i>
+      <span>Data Analysis</span>
+      <div class="skill-bar"><div class="progress" style="width: 80%;"></div></div>
+    </div>
+
+    <div class="skill-item">
+      <i class="fab fa-react"></i>
+      <span>React</span>
+      <div class="skill-bar"><div class="progress" style="width: 70%;"></div></div>
+    </div>
+
+  </div>
+</section>
+
+
+    <section id="projects">
+      <h2><i class="fas fa-code"></i> Projects</h2>
+
+      <div class="project">
+        <img src="pic.avif" alt="Project 1">
+            <div>
+          <h3> Placement Management System</h3>
+          <p>This project involved buiding a Placement Management system.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="premium.avif" alt="Project 2">
+        <div>
+          <h3>User authentication and contact form</h3>
+          <p> This Project involved building a User Authentication System.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <p><i class="fas fa-envelope"></i> Email: munnavvarhussain@gmail.com</p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: www.linkedin.com/in/munnavvar-hussain-804735352</p>
+      <p><i class="fab fa-github"></i> GitHub: https://github.com/munnavvarhussain</p>
+    </section>
+<section id="contact">
+  <h2><i class="fas fa-envelope"></i> Contact</h2>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    <p id="form-message"></p>
+  </form>
+</section>
+
+    <section id="resume">
+  <h2><i class="fas fa-file-alt"></i> Resume</h2>
+  <p>
+    Here's a quick summary of my qualifications and experience. For the full version, you can download my resume below.
+  </p>
+
+  <ul class="resume-summary">
+    <li><strong>Web Development:</strong> Proficient in HTML, CSS, JavaScript, and responsive design.</li>
+    <li><strong>Web Design:</strong> UI/UX focused design using modern tools and frameworks.</li>
+    <li><strong>Data Analysis:</strong> Skilled in Python, Excel, SQL, and data visualization tools.</li>
+    <li><strong>Education:</strong> Bachelor's degree in Computer Science (or your actual degree).</li>
+  </ul>
+
+  <a href="munavvar hussain computer science.pdf" download class="btn"></a>
+    <i class="fas fa-download"></i> Download Resume (PDF)
+  </a>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 munnavvar hussain. All rights reserved.</p>
+  </footer>
+<script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <div class="dark-mode-toggle">
+  <label class="switch">
+    <input type="checkbox" id="darkModeToggle">
+    <span class="slider round"></span>
+  </label>
+  <span>Dark Mode</span>
+</div>
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  toggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+  });
+</script>
+
+</body>
+<nav class="navbar">
+  <ul>
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+    <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  
+</nav>
+
+</html>
